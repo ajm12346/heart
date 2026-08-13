@@ -1,0 +1,306 @@
+{
+  "model_version": "uci-logistic-2026.08.13-v1",
+  "created": "2026-08-13",
+  "training_rows": 920,
+  "target": "UCI angiographic heart-disease presence: 0 vs 1-4",
+  "not_intended_for": [
+    "clinical diagnosis",
+    "emergency triage",
+    "treatment decisions",
+    "future absolute risk"
+  ],
+  "sources": {
+    "cleveland": {
+      "rows": 303,
+      "positive": 139,
+      "positive_rate": 0.45874587458745875,
+      "missing_cells": 6
+    },
+    "hungary": {
+      "rows": 294,
+      "positive": 106,
+      "positive_rate": 0.36054421768707484,
+      "missing_cells": 782
+    },
+    "switzerland": {
+      "rows": 123,
+      "positive": 115,
+      "positive_rate": 0.9349593495934959,
+      "missing_cells": 273
+    },
+    "va_long_beach": {
+      "rows": 200,
+      "positive": 149,
+      "positive_rate": 0.745,
+      "missing_cells": 698
+    }
+  },
+  "raw_sha256": {
+    "cleveland": "a74b7efa387bc9d108d7d0115d831fe9b414b29ae7124f331b622b4efa0427c8",
+    "hungary": "d1ad108f785768cd3d7e82dc522e6f5a61eea93cccfb3a46ee8076f73fc3d796",
+    "switzerland": "834a405ccf5b66ab4056bb77794adc8df0b7125186454c0a1d002d33c6c3b314",
+    "va_long_beach": "e7c93d8d0d2acdadfa4c5e8de768e2191e7f618b952e29623f1f0d5949ff6b8f"
+  },
+  "oof_metrics_at_high_threshold": {
+    "threshold": 0.51,
+    "tp": 434,
+    "tn": 318,
+    "fp": 93,
+    "fn": 75,
+    "sensitivity": 0.8526522593320236,
+    "specificity": 0.7737226277372263,
+    "ppv": 0.8235294117647058,
+    "npv": 0.8091603053435115,
+    "accuracy": 0.8173913043478261,
+    "n": 920,
+    "positive_rate": 0.5532608695652174,
+    "auroc": 0.8843493515743384,
+    "average_precision": 0.8977122120470471,
+    "brier": 0.14713203289092586
+  },
+  "oof_metrics_at_0_5": {
+    "threshold": 0.5,
+    "tp": 437,
+    "tn": 314,
+    "fp": 97,
+    "fn": 72,
+    "sensitivity": 0.8585461689587426,
+    "specificity": 0.7639902676399026,
+    "ppv": 0.8183520599250936,
+    "npv": 0.8134715025906736,
+    "accuracy": 0.816304347826087,
+    "n": 920,
+    "positive_rate": 0.5532608695652174,
+    "auroc": 0.8843493515743384,
+    "average_precision": 0.8977122120470471,
+    "brier": 0.14713203289092586
+  },
+  "fold_metrics": [
+    {
+      "threshold": 0.5,
+      "tp": 89,
+      "tn": 63,
+      "fp": 21,
+      "fn": 14,
+      "sensitivity": 0.8640776699029126,
+      "specificity": 0.75,
+      "ppv": 0.8090909090909091,
+      "npv": 0.8181818181818182,
+      "accuracy": 0.8128342245989305,
+      "n": 187,
+      "positive_rate": 0.5508021390374331,
+      "auroc": 0.9058021266759131,
+      "average_precision": 0.9211099769521297,
+      "brier": 0.1429551671623518,
+      "fold": 1
+    },
+    {
+      "threshold": 0.5,
+      "tp": 88,
+      "tn": 61,
+      "fp": 22,
+      "fn": 14,
+      "sensitivity": 0.8627450980392157,
+      "specificity": 0.7349397590361446,
+      "ppv": 0.8,
+      "npv": 0.8133333333333334,
+      "accuracy": 0.8054054054054054,
+      "n": 185,
+      "positive_rate": 0.5513513513513514,
+      "auroc": 0.8811717458067564,
+      "average_precision": 0.8984063204944164,
+      "brier": 0.1477384916504868,
+      "fold": 2
+    },
+    {
+      "threshold": 0.5,
+      "tp": 89,
+      "tn": 68,
+      "fp": 15,
+      "fn": 13,
+      "sensitivity": 0.8725490196078431,
+      "specificity": 0.8192771084337349,
+      "ppv": 0.8557692307692307,
+      "npv": 0.8395061728395061,
+      "accuracy": 0.8486486486486486,
+      "n": 185,
+      "positive_rate": 0.5513513513513514,
+      "auroc": 0.9034963382943539,
+      "average_precision": 0.9183368535238869,
+      "brier": 0.13533281291565724,
+      "fold": 3
+    },
+    {
+      "threshold": 0.5,
+      "tp": 82,
+      "tn": 61,
+      "fp": 20,
+      "fn": 20,
+      "sensitivity": 0.803921568627451,
+      "specificity": 0.7530864197530864,
+      "ppv": 0.803921568627451,
+      "npv": 0.7530864197530864,
+      "accuracy": 0.7814207650273224,
+      "n": 183,
+      "positive_rate": 0.5573770491803278,
+      "auroc": 0.8524570321955943,
+      "average_precision": 0.8870874420442297,
+      "brier": 0.16011867268418745,
+      "fold": 4
+    },
+    {
+      "threshold": 0.5,
+      "tp": 89,
+      "tn": 61,
+      "fp": 19,
+      "fn": 11,
+      "sensitivity": 0.89,
+      "specificity": 0.7625,
+      "ppv": 0.8240740740740741,
+      "npv": 0.8472222222222222,
+      "accuracy": 0.8333333333333334,
+      "n": 180,
+      "positive_rate": 0.5555555555555556,
+      "auroc": 0.876625,
+      "average_precision": 0.8677132175739746,
+      "brier": 0.14977191974638362,
+      "fold": 5
+    }
+  ],
+  "leave_one_site_out": [
+    {
+      "threshold": 0.5,
+      "tp": 123,
+      "tn": 94,
+      "fp": 70,
+      "fn": 16,
+      "sensitivity": 0.8848920863309353,
+      "specificity": 0.573170731707317,
+      "ppv": 0.6373056994818653,
+      "npv": 0.8545454545454545,
+      "accuracy": 0.7161716171617162,
+      "n": 303,
+      "positive_rate": 0.45874587458745875,
+      "auroc": 0.8645376381821372,
+      "average_precision": 0.8603961027113575,
+      "brier": 0.1825698126367906,
+      "held_out_site": "cleveland"
+    },
+    {
+      "threshold": 0.5,
+      "tp": 89,
+      "tn": 121,
+      "fp": 67,
+      "fn": 17,
+      "sensitivity": 0.839622641509434,
+      "specificity": 0.6436170212765957,
+      "ppv": 0.5705128205128205,
+      "npv": 0.8768115942028986,
+      "accuracy": 0.7142857142857143,
+      "n": 294,
+      "positive_rate": 0.36054421768707484,
+      "auroc": 0.8529706945002007,
+      "average_precision": 0.8094902142387733,
+      "brier": 0.19368087569057282,
+      "held_out_site": "hungary"
+    },
+    {
+      "threshold": 0.5,
+      "tp": 82,
+      "tn": 5,
+      "fp": 3,
+      "fn": 33,
+      "sensitivity": 0.7130434782608696,
+      "specificity": 0.625,
+      "ppv": 0.9647058823529412,
+      "npv": 0.13157894736842105,
+      "accuracy": 0.7073170731707317,
+      "n": 123,
+      "positive_rate": 0.9349593495934959,
+      "auroc": 0.7021739130434783,
+      "average_precision": 0.9637371381977179,
+      "brier": 0.19234027845105106,
+      "held_out_site": "switzerland"
+    },
+    {
+      "threshold": 0.5,
+      "tp": 109,
+      "tn": 29,
+      "fp": 22,
+      "fn": 40,
+      "sensitivity": 0.7315436241610739,
+      "specificity": 0.5686274509803921,
+      "ppv": 0.8320610687022901,
+      "npv": 0.42028985507246375,
+      "accuracy": 0.69,
+      "n": 200,
+      "positive_rate": 0.745,
+      "auroc": 0.7135149361758126,
+      "average_precision": 0.8724801405458099,
+      "brier": 0.19151814678330298,
+      "held_out_site": "va_long_beach"
+    }
+  ],
+  "calibration_bins": [
+    {
+      "lower": 0.0,
+      "upper": 0.125,
+      "n": 3,
+      "mean_probability": 0.12066983586647213,
+      "observed_rate": 0.0
+    },
+    {
+      "lower": 0.125,
+      "upper": 0.25,
+      "n": 122,
+      "mean_probability": 0.20098870010282696,
+      "observed_rate": 0.07377049180327869
+    },
+    {
+      "lower": 0.25,
+      "upper": 0.375,
+      "n": 132,
+      "mean_probability": 0.30940950549478696,
+      "observed_rate": 0.16666666666666666
+    },
+    {
+      "lower": 0.375,
+      "upper": 0.5,
+      "n": 129,
+      "mean_probability": 0.43536075709167915,
+      "observed_rate": 0.3178294573643411
+    },
+    {
+      "lower": 0.5,
+      "upper": 0.625,
+      "n": 129,
+      "mean_probability": 0.5631186240065846,
+      "observed_rate": 0.627906976744186
+    },
+    {
+      "lower": 0.625,
+      "upper": 0.75,
+      "n": 155,
+      "mean_probability": 0.6901281341799513,
+      "observed_rate": 0.7935483870967742
+    },
+    {
+      "lower": 0.75,
+      "upper": 0.875,
+      "n": 192,
+      "mean_probability": 0.8070003372401352,
+      "observed_rate": 0.921875
+    },
+    {
+      "lower": 0.875,
+      "upper": 1.0,
+      "n": 58,
+      "mean_probability": 0.9016261372439375,
+      "observed_rate": 0.9655172413793104
+    }
+  ],
+  "thresholds": {
+    "low_attention": 0.313,
+    "attention_high": 0.51
+  }
+}
